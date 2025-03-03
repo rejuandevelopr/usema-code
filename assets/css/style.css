@@ -55,7 +55,7 @@ h1 {
 h2 {
     color: var(--Brown-Dark);
     font-family: MarrSans;
-    font-size: 80px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 300;
     line-height: 110%;
@@ -66,7 +66,7 @@ h2 {
 h3 {
     color: var(--Brown-Dark);
     font-family: MarrSans;
-    font-size: 64px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -177,7 +177,7 @@ h4 {
 p {
     color: var(--Brown-Dark);
     font-family: Manrope;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -203,10 +203,6 @@ p {
 
 /* For large screens (desktop and large laptops) */
 @media (max-width: 1440px) {
-    p {
-        font-size: 28px;
-    }
-
     .subhead {
         font-size: 22px;
     }
@@ -214,10 +210,6 @@ p {
 
 
 @media (max-width: 992px) {
-    p {
-        font-size: 24px;
-    }
-
     .subhead {
         font-size: 20px;
     }
@@ -699,7 +691,7 @@ header {
 
     #hero {
         padding-bottom: 60px;
-        
+
     }
 }
 
@@ -825,11 +817,17 @@ header {
 .content-img {
     padding-bottom: 267px;
     padding-top: 78px;
-    padding-left: 211px;
+    padding-left: 450px;
     overflow-x: hidden;
     margin-top: 150px;
     border: 0;
     position: relative;
+}
+
+@media screen and (max-width:1440px) {
+    .content-img {
+        padding-left: 176px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -841,7 +839,7 @@ header {
 @media screen and (max-width:992px) {
     .content-img {
         margin-top: 130px;
-        padding-left: 111px;
+        padding-left: 181px;
         padding-top: 40px;
     }
 }
@@ -849,20 +847,34 @@ header {
 @media screen and (max-width:768px) {
     .content-img {
         margin-top: 60px;
+        padding-left: 140px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .content-img {
+        margin-top: 60px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .content-img {
+        margin-top: 60px;
         padding-left: 20px;
     }
 }
 
 .content-img img:first-child {
-    width: 1092px;
-    height: 1092px;
+    width: 822px;
+    height: 822px;
     border-radius: 35px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1440px) {
     .content-img img:first-child {
-        width: 992px;
-        height: 992px;
+        width: 792px;
+        height: 792px;
     }
 }
 
@@ -872,7 +884,7 @@ header {
     left: 0;
     z-index: 1;
     object-fit: contain;
-    max-width: 725px;
+    max-width: 625px;
     max-height: 195px;
 }
 
@@ -880,20 +892,20 @@ header {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-12%, 0%);
+    transform: translate(24%, 0%);
     z-index: 1;
     object-fit: contain;
-    max-width: 400.796px;
+    max-width: 330.796px;
     max-height: 696px;
 }
 
 @media screen and (max-width:1440px) {
     .img-c-1 {
-        max-width: 625px;
+        max-width: 525px;
     }
 
     .img-c-2 {
-        max-width: 340.796px;
+        max-width: 300.796px;
     }
 }
 
@@ -916,8 +928,8 @@ header {
 
 @media screen and (max-width:992px) {
     .content-img img:first-child {
-        width: 712px;
-        height: 712px;
+        width: 612px;
+        height: 612px;
         border-radius: 35px;
     }
 
@@ -1096,7 +1108,7 @@ header {
 /* Learning  */
 .learning-quote {
     margin-top: 6px;
-    padding-bottom: 250px;
+    padding-bottom: 220px;
 }
 
 .learning-quote .content-card {
@@ -1155,8 +1167,8 @@ header {
 }
 
 .bottom-content .content-img img:first-child {
-    width: 860px;
-    height: 920px;
+    width: 690px;
+    height: 740px;
     margin-left: -30px;
 }
 
@@ -1169,39 +1181,39 @@ header {
 
 
 .img-b-1 {
-    max-width: 326px;
+    max-width: 266px;
     max-height: 863px;
     position: absolute;
     top: 0%;
     right: 0%;
-    transform: translate(-80%, -0%);
+    transform: translate(-164%, -0%);
 }
 
 .img-b-2 {
-    max-width: 714px;
+    max-width: 614px;
     max-height: 219px;
     position: absolute;
     bottom: 0%;
     right: 0%;
-    transform: translate(-10%, -10%);
+    transform: translate(-40%, -18%);
 }
 
 @media screen and (max-width:1440px) {
     .bottom-content .content-img img:first-child {
-        max-width: 760px;
-        height: 720px;
+        width: 690px;
+        height: 740px;
         padding-right: 0;
     }
 
     .img-b-1 {
-        max-width: 296px;
+        max-width: 246px;
         max-height: 663px;
-        transform: translate(-20%, -0%);
+        transform: translate(-60%, -0%);
     }
 
     .img-b-2 {
-        max-width: 614px;
-        transform: translate(0%, -9%);
+        max-width: 514px;
+        transform: translate(-10%, -24%);
     }
 }
 
@@ -1323,7 +1335,7 @@ header {
 .join-part {
     margin-top: -340px;
     background-color: var(--secondary-color);
-    padding-top: 600px;
+    padding-top: 500px;
     padding-bottom: 200px;
 }
 
@@ -1484,6 +1496,10 @@ header {
     gap: 100px;
 }
 
+.waitlist-signs img {
+    max-width: 128px;
+}
+
 @media screen and (max-width:1440px) {
     .join-waitlist {
         padding-top: 120px;
@@ -1499,7 +1515,7 @@ header {
     }
 
     .waitlist-signs img {
-        max-width: 128px;
+        max-width: 108px;
     }
 }
 
@@ -1642,6 +1658,12 @@ footer {
     }
 }
 
+@media screen and (max-width:768px) {
+    #aboutHero {
+        min-height: 90vh;
+    }
+}
+
 #aboutHero h1,
 #aboutHero p {
     text-align: start;
@@ -1729,6 +1751,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    #aboutmain {
+        padding-top: 124px;
+    }
+
     #aboutHero h1 {
         font-size: 40px;
     }
@@ -1743,6 +1769,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #aboutmain {
+        padding-top: 94px;
+    }
+
     #aboutHero h1 {
         font-size: 36px;
     }
@@ -1846,12 +1876,14 @@ body {
     z-index: 99999;
     transition: opacity 1s ease-in-out;
 }
+
 .preloader h1 {
     color: #000;
     font-size: 2rem;
     position: relative;
     z-index: 10;
 }
+
 .circle {
     position: absolute;
     width: 100px;
@@ -1865,25 +1897,51 @@ body {
 .expand {
     animation: expand 4s ease-out forwards;
 }
+
 @keyframes expand {
     0% {
         transform: scale(1);
         opacity: 1;
     }
+
     100% {
         transform: scale(50);
         opacity: 1;
     }
 }
+
 .fade-out {
     opacity: 0;
     pointer-events: none;
 }
+
 .content {
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
 body.loaded .content {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+
+/* Animation */
+.content-card-h2 {
+    filter: blur(10px);
+    /* Initial blur */
+    opacity: 0;
+    /* Initially invisible */
+    transition: filter 1s ease-out, opacity 1s ease-out;
+    /* Smooth transition */
+}
+
+.content-card-effect.h2-aos-animate h2,
+.content-card-effect.h2-aos-animate h3 {
+    filter: blur(0px);
+    /* Removes blur */
+    opacity: 1;
+    /* Fully visible */
 }

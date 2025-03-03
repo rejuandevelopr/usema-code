@@ -8,6 +8,11 @@ AOS.init({
     duration: 1100, // Animation duration in milliseconds (default: 400)
 });
 
+AOS.init({
+    offset: 80, // Adjust to make it start earlier
+    duration: 700,
+    easing: 'ease-out',
+});
 
 
 
@@ -99,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         // Ensure navbar scroll function runs AFTER preloader disappears
                         setTimeout(initNavbarScroll, 200);
                     }, 1000);
-                }, 4000);
-            }, 2000);
+                }, 2000);
+            }, 1000);
         });
     }
 });
@@ -136,3 +141,19 @@ function toggleMenu() {
     document.body.style.overflow = isActive ? "hidden" : "auto";
 }
 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+        offset: 40, // Start animation 80px before entering viewport
+        duration: 300, // Animation duration in ms
+        easing: 'ease-out', // Smooth exit transition
+    });
+
+    document.querySelectorAll('.content-card-effect').forEach(el => {
+        el.addEventListener('transitionend', function() {
+            el.classList.add('h2-aos-animate'); 
+        });
+    });
+});
