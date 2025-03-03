@@ -705,7 +705,13 @@ header {
 
 @media screen and (max-width:576px) {
     .hero-content {
-        margin-top: 50px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .hero-content {
+        margin-top: 94px;
     }
 }
 
@@ -760,6 +766,17 @@ header {
         top: 0%;
         right: 0%;
         transform: translate(-16%, -42%);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .hero-img {
+        max-width: 227.666px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translate(-16%, -25%);
         z-index: 1;
     }
 }
